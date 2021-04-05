@@ -38,7 +38,6 @@ jobs:
       - name: Test
         env: 
           METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
-          METRICS_TOKEN_2: ${{ METRICS_TOKEN }}
         run: |
           echo ${#METRICS_TOKEN}
-          echo ${#METRICS_TOKEN_2}
+          
